@@ -5,7 +5,6 @@ describe "Merchants Index Page" do
     @moose = Merchant.create(name: "Moose Munchies", address: "306 Meese Ave", city: "Moose Jaw", state: "MO", zip: "50400")
     @ehplus = Merchant.create(name: "Eh Plus School Supplies", address: "123 ABC St", city: "Elbow", state: "ND", zip: "50410")
     @twofour = Merchant.create(name: "Two-Four Liquors", address: "416 Mickey Rd", city: "Punkeydoodles Corners", state: "NY", zip: "48186")
-
   end
 
   it "lists all merchants" do
