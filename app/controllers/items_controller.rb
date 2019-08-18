@@ -11,6 +11,12 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
   end
 
+  def create
+    item = Item.create!(item_params)
+    item.save
+    redirect_to "/items"
+  end 
+
   private
   def item_params
     params.permit(:name, :description, :price, :image, :status, :inventory, :merchant)
