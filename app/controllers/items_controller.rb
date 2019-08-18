@@ -4,7 +4,6 @@ class ItemsController < ApplicationController
   end
 
   def new
-    @item = Item.new
   end
 
   def show
@@ -15,10 +14,10 @@ class ItemsController < ApplicationController
     item = Item.create!(item_params)
     item.save
     redirect_to "/items"
-  end 
+  end
 
   private
   def item_params
-    params.permit(:name, :description, :price, :image, :status, :inventory, :merchant)
+    params.permit(:name, :description, :price, :image, :active, :inventory, :merchant)
   end
 end
