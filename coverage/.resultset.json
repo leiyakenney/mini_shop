@@ -321,13 +321,6 @@
         1,
         null
       ],
-      "/Users/lkenney/turing/2module/projects/mini_shop/app/models/item.rb": [
-        1,
-        null,
-        1,
-        null,
-        null
-      ],
       "/Users/lkenney/turing/2module/projects/mini_shop/app/controllers/merchants_controller.rb": [
         1,
         1,
@@ -374,8 +367,15 @@
         1,
         1,
         null
+      ],
+      "/Users/lkenney/turing/2module/projects/mini_shop/app/models/item.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1566148406
+    "timestamp": 1566148815
   }
 }
