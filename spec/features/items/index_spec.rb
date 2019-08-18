@@ -10,6 +10,16 @@ describe "Items Index Page" do
   it "lists all items and their descriptions" do
   # As a visitor
   # When I visit '/items'
+    visit '/items'
+    expect(page).to have_content(@beaver.name)
+    expect(page).to have_content(@beaver.description)
+    expect(page).to have_content(@beaver.price)
+    expect(page).to have_content(@beaver.image)
+    expect(page).to have_content(@beaver.status)
+    expect(page).to have_content(@beaver.inventory)
+    expect(page).to have_content(@beaver.merchant)
+    expect(page).to have_content(@farmers.name)
+    expect(page).to have_content(@twofour.name)
   # Then I see each Item in the system including the Item's:
   # - name
   # - description
